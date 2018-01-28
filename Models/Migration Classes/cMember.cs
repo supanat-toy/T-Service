@@ -13,8 +13,7 @@ namespace T_Service.Models
     {
         public cMember()
         {
-            // isSuccess = false;
-            // message = "N/A";
+            
         }
         [Required (ErrorMessage = "NEED")]
         public long member_id { get; set; }

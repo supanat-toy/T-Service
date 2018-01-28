@@ -13,8 +13,7 @@ namespace T_Service.Models
     {
         public cMember_book_address()
         {
-            // isSuccess = false;
-            // message = "N/A";
+            
         }
         [Required (ErrorMessage = "NEED")]
         public long member_book_address_id { get; set; }
@@ -23,9 +22,9 @@ namespace T_Service.Models
         public string place_name { get; set; }
         public string address_details { get; set; }
         public int amphur_id { get; set; }
-        public string district_id { get; set; }
-        public string province_id { get; set; }
-        public string zip_code { get; set; }
+        public int district_id { get; set; }
+        public int province_id { get; set; }
+        public int zip_code { get; set; }
         public string phone_number { get; set; }
         public string map_google_url { get; set; }
         public string map_image_url { get; set; }
