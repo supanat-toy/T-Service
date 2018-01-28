@@ -1,0 +1,10 @@
+/Users/supanattechasothon/Documents/Programing Project/Web/C#/Web/T-Service/obj/Debug/netcoreapp2.0/T-Service.csproj.CoreCompileInputs.cache
+/Users/supanattechasothon/Documents/Programing Project/Web/C#/Web/T-Service/obj/Debug/netcoreapp2.0/T-Service.AssemblyInfoInputs.cache
+/Users/supanattechasothon/Documents/Programing Project/Web/C#/Web/T-Service/obj/Debug/netcoreapp2.0/T-Service.AssemblyInfo.cs
+/Users/supanattechasothon/Documents/Programing Project/Web/C#/Web/T-Service/bin/Debug/netcoreapp2.0/T-Service.deps.json
+/Users/supanattechasothon/Documents/Programing Project/Web/C#/Web/T-Service/bin/Debug/netcoreapp2.0/T-Service.runtimeconfig.json
+/Users/supanattechasothon/Documents/Programing Project/Web/C#/Web/T-Service/bin/Debug/netcoreapp2.0/T-Service.runtimeconfig.dev.json
+/Users/supanattechasothon/Documents/Programing Project/Web/C#/Web/T-Service/bin/Debug/netcoreapp2.0/T-Service.dll
+/Users/supanattechasothon/Documents/Programing Project/Web/C#/Web/T-Service/bin/Debug/netcoreapp2.0/T-Service.pdb
+/Users/supanattechasothon/Documents/Programing Project/Web/C#/Web/T-Service/obj/Debug/netcoreapp2.0/T-Service.dll
+/Users/supanattechasothon/Documents/Programing Project/Web/C#/Web/T-Service/obj/Debug/netcoreapp2.0/T-Service.pdb
