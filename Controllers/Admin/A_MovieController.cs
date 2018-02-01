@@ -11,9 +11,9 @@ namespace T_Service.Controllers
 {
     public class A_MovieController : FunctionsHelper
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        // public IActionResult Index()
+        // {
+        //     return View();
+        // }
     }
 }

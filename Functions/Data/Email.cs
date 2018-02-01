@@ -32,7 +32,7 @@ namespace T_Service.Functions
             smtp.EnableSsl = true;
             smtp.Send(mail);
 
-            result.isSuccess = true;
+            result.isSucceed = true;
             result.message = "Send Successfully";
             return result;
             //}

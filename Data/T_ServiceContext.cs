@@ -1,7 +1,7 @@
 using T_Service.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace T_ServiceContext.Data
+namespace T_Service.Data
 {
     public class T_ServiceContext : DbContext
     {
@@ -13,12 +13,8 @@ namespace T_ServiceContext.Data
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-            modelBuilder.Entity<mUser>()
-				.Property(x => x.createdDatetime)
-				.HasDefaultValueSql("getdate()");
-
-            modelBuilder.Entity<mUser>()
-				.Property(x => x.updatedDatetime)
+            modelBuilder.Entity<cDelivery_product>()
+				.Property(x => x.created_datetime)
 				.HasDefaultValueSql("getdate()");
 		}
 

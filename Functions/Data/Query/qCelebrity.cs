@@ -11,22 +11,22 @@ namespace T_Service.Functions
 {
     public class qCelebrity : FunctionsHelper
     {
-        public List<mCelebrity> getList(){
-            var celebrityList = new List<mCelebrity>();
-            return celebrityList;
-        }
+        // public List<mCelebrity> getList(){
+        //     var celebrityList = new List<mCelebrity>();
+        //     return celebrityList;
+        // }
 
-        public mCelebrity getDetails(long id){
-            var celebrity = new mCelebrity();
-            return celebrity;
-        }
+        // public mCelebrity getDetails(long id){
+        //     var celebrity = new mCelebrity();
+        //     return celebrity;
+        // }
 
-        public void insertDB(mCelebrity celebrity){
+        // public void insertDB(mCelebrity celebrity){
 
-        }
+        // }
 
-        public void updateDB(long id, mCelebrity celebrity){
+        // public void updateDB(long id, mCelebrity celebrity){
 
-        }
+        // }
     }
 }
