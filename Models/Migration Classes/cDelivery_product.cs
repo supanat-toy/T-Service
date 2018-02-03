@@ -18,6 +18,7 @@ namespace T_Service.Models
             
         }
         [Required (ErrorMessage = "NEED")]
+        [Key]
         public long delivery_product_id { get; set; }
         public string product_code { get; set; }
         public string nameEN { get; set; }
