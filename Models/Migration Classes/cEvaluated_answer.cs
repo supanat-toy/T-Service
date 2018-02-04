@@ -18,6 +18,7 @@ namespace T_Service.Models
             
         }
         [Required (ErrorMessage = "NEED")]
+        [Key]
         public long Tservice_type_id { get; set; }
         public long evaluated_answer_id { get; set; }
         public long evaluated_question_choice_id { get; set; }

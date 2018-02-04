@@ -16,6 +16,7 @@ namespace T_Service.Models
             
         }
         [Required (ErrorMessage = "NEED")]
+        [Key]
         public long member_book_address_id { get; set; }
         public string member_email { get; set; }
         public string receiver_name { get; set; }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using T_Service.Models;
+using T_Service.Data;
 
 namespace T_Service.Functions
 {
@@ -20,8 +21,15 @@ namespace T_Service.Functions
         protected readonly Storage _storage;
         protected readonly User _user;
         protected readonly Service _service;
-
-       
+        protected readonly T_ServiceContext _db;
+        public FunctionsHelper()
+        {
+            
+        }
+        public FunctionsHelper(T_ServiceContext db)
+        {
+            _db = db;
+        }
     }
     
 }

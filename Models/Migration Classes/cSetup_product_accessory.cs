@@ -16,6 +16,7 @@ namespace T_Service.Models
             
         }
         [Required (ErrorMessage = "NEED")]
+        [Key]
         public long setup_product_accessory_id { get; set; }
         public long setup_product_id { get; set; }
         public long list_setup_product_accessory_id { get; set; }

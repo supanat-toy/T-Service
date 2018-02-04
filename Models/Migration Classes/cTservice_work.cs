@@ -17,6 +17,7 @@ namespace T_Service.Models
             
         }
         [Required (ErrorMessage = "NEED")]
+        [Key]
         public long Tservice_type_id { get; set; }
         public DateTime created_datetime { get; set; }
         public DateTime updated_datetime { get; set; }

@@ -16,6 +16,7 @@ namespace T_Service.Models
             
         }
         [Required (ErrorMessage = "NEED")]
+        [Key]
         public long member_id { get; set; }
         public string full_name { get; set; }
         public string password { get; set; }

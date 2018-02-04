@@ -17,6 +17,7 @@ namespace T_Service.Models
             
         }
         [Required (ErrorMessage = "NEED")]
+        [Key]
         public long Tservice_work_id { get; set; }
         public long employee_id { get; set; }
     }

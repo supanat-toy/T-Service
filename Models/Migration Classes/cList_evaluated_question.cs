@@ -17,6 +17,7 @@ namespace T_Service.Models
             
         }
         [Required (ErrorMessage = "NEED")]
+        [Key]
         public long evaluated_question_id { get; set; }
         public string nameEN { get; set; }
         public string nameTH { get; set; }

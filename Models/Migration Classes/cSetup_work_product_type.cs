@@ -16,6 +16,7 @@ namespace T_Service.Models
             
         }
         [Required (ErrorMessage = "NEED")]
+        [Key]
         public long setup_work_product_type_id { get; set; }
         public string nameEN { get; set; }
         public string nameTH { get; set; }

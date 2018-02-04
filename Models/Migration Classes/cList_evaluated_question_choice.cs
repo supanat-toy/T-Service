@@ -18,6 +18,7 @@ namespace T_Service.Models
             
         }
         [Required (ErrorMessage = "NEED")]
+        [Key]
         public long evaluated_questtion_choice_id { get; set; }
         public double version_number { get; set; }
         public string nameEN { get; set; }
