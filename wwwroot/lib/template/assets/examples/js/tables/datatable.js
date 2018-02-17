@@ -84,7 +84,7 @@
           'bSortable': false,
           'aTargets': [-1]
         }],
-        "iDisplayLength": 5,
+        "iDisplayLength": 50,
         "aLengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
         "sDom": '<"dt-panelmenu clearfix"Bfr>t<"dt-panelfooter clearfix"ip>',
         "buttons": ['copy', 'excel', 'csv', 'pdf', 'print']

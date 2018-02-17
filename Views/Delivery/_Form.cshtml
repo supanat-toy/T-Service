@@ -1,0 +1,41 @@
+<!-- Page Content -->
+<div class="page-content container-fluid">
+  @Html.Partial("~/Views/PartialView/vMember.cshtml")
+    <div class="row"> <!-- ข้อมูลติดตั้งสินค้า -->
+          <div class="col-xxl-12 col-lg-12">
+            <!-- Example Panel With Heading -->
+            <div class="panel panel-bordered">
+                <div class="panel-heading">
+                    <h3 class="panel-title">ข้อมูลสินค้า</h3>
+                    <div class="panel-actions">
+                        <div class="input-group">
+                          <div class="form-inline">
+                            <div class="form-group col-md-12">
+                              <div>
+                                <div class="radio-custom radio-primary radio-inline">
+                                  <input type="radio" id="inputBasicMale" name="inputGender" checked>
+                                  <label for="inputBasicMale">ใบขายสินค้า</label>
+                                </div>
+                                <div class="radio-custom radio-primary radio-inline">
+                                  <input type="radio" id="inputBasicFemale" name="inputGender">
+                                  <label for="inputBasicFemale">ใบรับซ่อม</label>
+                                </div>
+                              </div>
+                              <div class="form-group margin-left-10">
+                                <input type="text" class="form-control" id="inputBasicFirstName" name="inputFirstName" placeholder="เลขที่" autocomplete="off">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  @Html.Partial("~/Views/PartialView/vProductShortForm.cshtml")
+                </div>
+            </div>
+            <!-- End Example Panel With Heading -->
+          </div>
+        </div>
+    @Html.Partial("~/Views/PartialView/vEvaluation.cshtml")
+</div>
+<!-- End Page Content -->

@@ -8,16 +8,13 @@ using Newtonsoft.Json;
 
 namespace T_Service.Models
 {
-    public class mResult
+    public class mDelivery_work: mTservice_work
     {
-        public mResult()
+        public mDelivery_work()
         {
-            isSucceed = false;
-            message = "N/A";
+
         }
-
-        public bool isSucceed { get; set; }
-        public string message { get; set; }
-
+        public cDelivery_work delivery_work { get; set; }
+        public List<cDelivery_product> delivery_productList { get; set; }
     }
 }

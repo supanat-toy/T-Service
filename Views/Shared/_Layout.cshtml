@@ -24,13 +24,45 @@
     <link rel="stylesheet" href="~/lib/template/vendor/intro-js/introjs.css">
     <link rel="stylesheet" href="~/lib/template/vendor/slidepanel/slidePanel.css">
     <link rel="stylesheet" href="~/lib/template/vendor/flag-icon-css/flag-icon.css">
-    
-    
+    <link rel="stylesheet" href="~/lib/template/vendor/flag-icon-css/flag-icon.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/select2/select2.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/bootstrap-tokenfield/bootstrap-tokenfield.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/bootstrap-tagsinput/bootstrap-tagsinput.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/bootstrap-select/bootstrap-select.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/icheck/icheck.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/switchery/switchery.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/asrange/asRange.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/ionrangeslider/ionrangeslider.min.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/asspinner/asSpinner.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/clockpicker/clockpicker.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/ascolorpicker/asColorPicker.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/bootstrap-touchspin/bootstrap-touchspin.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/jquery-labelauty/jquery-labelauty.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/bootstrap-datepicker/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/bootstrap-maxlength/bootstrap-maxlength.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/timepicker/jquery-timepicker.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/jquery-strength/jquery-strength.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/multi-select/multi-select.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/typeahead-js/typeahead.css">
+
+        <link rel="stylesheet" href="~/lib/template/vendor/datatables.net-bs4/dataTables.bootstrap4.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/datatables.net-fixedheader-bs4/dataTables.fixedheader.bootstrap4.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/datatables.net-fixedcolumns-bs4/dataTables.fixedcolumns.bootstrap4.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/datatables.net-rowgroup-bs4/dataTables.rowgroup.bootstrap4.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/datatables.net-scroller-bs4/dataTables.scroller.bootstrap4.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/datatables.net-select-bs4/dataTables.select.bootstrap4.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/datatables.net-responsive-bs4/dataTables.responsive.bootstrap4.css">
+        <link rel="stylesheet" href="~/lib/template/vendor/datatables.net-buttons-bs4/dataTables.buttons.bootstrap4.css">
+        <link rel="stylesheet" href="../../assets/examples/css/tables/datatable.css">
+        
+        <link rel="stylesheet" href="~/lib/template/assets/examples/css/forms/advanced.css">
+        <link rel="stylesheet" href="~/css/custom-template.css">
+        <link rel="stylesheet" href="~/css/common.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="~/css/template/fonts/web-icons/web-icons.min.css">
     <link rel="stylesheet" href="~/css/template/fonts/brand-icons/brand-icons.min.css">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
-    
+
     <!--[if lt IE 9]>
     <script src="~/css/template/vendor/html5shiv/html5shiv.min.js"></script>
     <![endif]-->
@@ -200,7 +232,7 @@
             <ul class="site-menu" data-plugin="menu">
               <li class="site-menu-category">งานติดตั้ง</li>
               <li class="site-menu-item">
-                <a href="/Setup/Index">
+                <a href="/setup">
                   <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
                   <span class="site-menu-title">รายการข้อมูล</span>
                 </a>
@@ -213,42 +245,10 @@
               </li>
               <li class="site-menu-category">งานจัดส่ง</li>
               <li class="site-menu-item has-sub">
-                <a href="javascript:void(0)">
-                        <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
-                        <span class="site-menu-title">Layouts</span>
-                                <span class="site-menu-arrow"></span>
-                    </a>
-                <ul class="site-menu-sub">
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../layouts/menu-collapsed.html">
-                      <span class="site-menu-title">Menu Collapsed</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../layouts/menu-collapsed-alt.html">
-                      <span class="site-menu-title">Menu Collapsed Alt</span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="site-menu-item has-sub">
-                <a href="javascript:void(0)">
-                        <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
-                        <span class="site-menu-title">Layouts</span>
-                                <span class="site-menu-arrow"></span>
-                    </a>
-                <ul class="site-menu-sub">
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../layouts/menu-collapsed.html">
-                      <span class="site-menu-title">Menu Collapsed</span>
-                    </a>
-                  </li>
-                  <li class="site-menu-item">
-                    <a class="animsition-link" href="../layouts/menu-collapsed-alt.html">
-                      <span class="site-menu-title">Menu Collapsed Alt</span>
-                    </a>
-                  </li>
-                </ul>
+                <a href="/delivery">
+                  <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
+                  <span class="site-menu-title">รายการข้อมูล</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -273,7 +273,52 @@
     <script src="~/lib/template/vendor/intro-js/intro.js"></script>
     <script src="~/lib/template/vendor/screenfull/screenfull.js"></script>
     <script src="~/lib/template/vendor/slidepanel/jquery-slidePanel.js"></script>
-    
+        <script src="~/lib/template/vendor/select2/select2.full.min.js"></script>
+        <script src="~/lib/template/vendor/bootstrap-tokenfield/bootstrap-tokenfield.min.js"></script>
+        <script src="~/lib/template/vendor/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+        <script src="~/lib/template/vendor/bootstrap-select/bootstrap-select.js"></script>
+        <script src="~/lib/template/vendor/icheck/icheck.min.js"></script>
+        <script src="~/lib/template/vendor/switchery/switchery.js"></script>
+        <script src="~/lib/template/vendor/asrange/jquery-asRange.min.js"></script>
+        <script src="~/lib/template/vendor/ionrangeslider/ion.rangeSlider.min.js"></script>
+        <script src="~/lib/template/vendor/asspinner/jquery-asSpinner.min.js"></script>
+        <script src="~/lib/template/vendor/clockpicker/bootstrap-clockpicker.min.js"></script>
+        <script src="~/lib/template/vendor/ascolor/jquery-asColor.min.js"></script>
+        <script src="~/lib/template/vendor/asgradient/jquery-asGradient.min.js"></script>
+        <script src="~/lib/template/vendor/ascolorpicker/jquery-asColorPicker.min.js"></script>
+        <script src="~/lib/template/vendor/bootstrap-maxlength/bootstrap-maxlength.js"></script>
+        <script src="~/lib/template/vendor/jquery-knob/jquery.knob.js"></script>
+        <script src="~/lib/template/vendor/bootstrap-touchspin/bootstrap-touchspin.min.js"></script>
+        <script src="~/lib/template/vendor/jquery-labelauty/jquery-labelauty.js"></script>
+        <script src="~/lib/template/vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+        <script src="~/lib/template/vendor/timepicker/jquery.timepicker.min.js"></script>
+        <script src="~/lib/template/vendor/datepair/datepair.min.js"></script>
+        <script src="~/lib/template/vendor/datepair/jquery.datepair.min.js"></script>
+        <script src="~/lib/template/vendor/jquery-strength/password_strength.js"></script>
+        <script src="~/lib/template/vendor/jquery-strength/jquery-strength.min.js"></script>
+        <script src="~/lib/template/vendor/multi-select/jquery.multi-select.js"></script>
+        <script src="~/lib/template/vendor/typeahead-js/bloodhound.min.js"></script>
+        <script src="~/lib/template/vendor/typeahead-js/typeahead.jquery.min.js"></script>
+        <script src="~/lib/template/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+
+        <!-- DataTable -->
+        <script src="~/lib/template/vendor/datatables.net/jquery.dataTables.js"></script>
+        <script src="~/lib/template/vendor/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+        <script src="~/lib/template/vendor/datatables.net-fixedheader/dataTables.fixedHeader.js"></script>
+        <script src="~/lib/template/vendor/datatables.net-fixedcolumns/dataTables.fixedColumns.js"></script>
+        <script src="~/lib/template/vendor/datatables.net-rowgroup/dataTables.rowGroup.js"></script>
+        <script src="~/lib/template/vendor/datatables.net-scroller/dataTables.scroller.js"></script>
+        <script src="~/lib/template/vendor/datatables.net-responsive/dataTables.responsive.js"></script>
+        <script src="~/lib/template/vendor/datatables.net-responsive-bs4/responsive.bootstrap4.js"></script>
+        <script src="~/lib/template/vendor/datatables.net-buttons/dataTables.buttons.js"></script>
+        <script src="~/lib/template/vendor/datatables.net-buttons/buttons.html5.js"></script>
+        <script src="~/lib/template/vendor/datatables.net-buttons/buttons.flash.js"></script>
+        <script src="~/lib/template/vendor/datatables.net-buttons/buttons.print.js"></script>
+        <script src="~/lib/template/vendor/datatables.net-buttons/buttons.colVis.js"></script>
+        <script src="~/lib/template/vendor/datatables.net-buttons-bs4/buttons.bootstrap4.js"></script>
+        <script src="~/lib/template/vendor/asrange/jquery-asRange.min.js"></script>
+        <script src="~/lib/template/vendor/bootbox/bootbox.js"></script>
+
     <!-- Scripts -->
     <script src="~/lib/template/js/Component.js"></script>
     <script src="~/lib/template/js/Plugin.js"></script>
@@ -295,7 +340,34 @@
     <script src="~/lib/template/js/Plugin/asscrollable.js"></script>
     <script src="~/lib/template/js/Plugin/slidepanel.js"></script>
     <script src="~/lib/template/js/Plugin/switchery.js"></script>
-    
+        <script src="~/lib/template/js/Plugin/select2.js"></script>
+        <script src="~/lib/template/js/Plugin/bootstrap-tokenfield.js"></script>
+        <script src="~/lib/template/js/Plugin/bootstrap-tagsinput.js"></script>
+        <script src="~/lib/template/js/Plugin/bootstrap-select.js"></script>
+        <script src="~/lib/template/js/Plugin/icheck.js"></script>
+        <script src="~/lib/template/js/Plugin/switchery.js"></script>
+        <script src="~/lib/template/js/Plugin/asrange.js"></script>
+        <script src="~/lib/template/js/Plugin/ionrangeslider.js"></script>
+        <script src="~/lib/template/js/Plugin/asspinner.js"></script>
+        <script src="~/lib/template/js/Plugin/clockpicker.js"></script>
+        <script src="~/lib/template/js/Plugin/ascolorpicker.js"></script>
+        <script src="~/lib/template/js/Plugin/bootstrap-maxlength.js"></script>
+        <script src="~/lib/template/js/Plugin/jquery-knob.js"></script>
+        <script src="~/lib/template/js/Plugin/bootstrap-touchspin.js"></script>
+        <script src="~/lib/template/js/Plugin/card.js"></script>
+        <script src="~/lib/template/js/Plugin/jquery-labelauty.js"></script>
+        <script src="~/lib/template/js/Plugin/bootstrap-datepicker.js"></script>
+        <script src="~/lib/template/js/Plugin/jt-timepicker.js"></script>
+        <script src="~/lib/template/js/Plugin/datepair.js"></script>
+        <script src="~/lib/template/js/Plugin/jquery-strength.js"></script>
+        <script src="~/lib/template/js/Plugin/multi-select.js"></script>
+        <script src="~/lib/template/js/Plugin/jquery-placeholder.js"></script>
+
+        <script src="~/lib/template/js/Plugin/datatables.js"></script>
+        <script src="~/lib/template/assets/examples/js/tables/datatable.js"></script>
+
+        <!-- Complie .js -->
+        <script src="~/js/custom-lib.js"></script>
     <script>
       (function(document, window, $){
         'use strict';

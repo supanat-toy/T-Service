@@ -5,14 +5,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using T_Service.Models;
+using T_Service.Providers;
 
 namespace T_Service.Functions
 {
     public class Service : FunctionsHelper
     {
-        public readonly qCelebrity _qCelebrity;
-        public readonly qCustomer _qCustomer;
-        public readonly qMovie _qMovie;
-        public readonly qUser _qUser;
+        public readonly pCelebrity _qCelebrity;
+        public readonly pCustomer _qCustomer;
+        public readonly pMovie _qMovie;
+        public readonly pUser _qUser;
     }
 }

@@ -9,7 +9,7 @@ using T_Service.Functions;
 
 namespace T_Service.Controllers
 {
-    public class SetupController : FunctionsHelper
+    public class DeliveryController : FunctionsHelper
     {
         public IActionResult Index()
         {
@@ -27,7 +27,7 @@ namespace T_Service.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(cSetup_work customer)
+        public IActionResult Create(cDelivery_work delivery)
         {
             // if (true){
             //     return View("New", customer);
@@ -49,7 +49,7 @@ namespace T_Service.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Update(string q, cSetup_work customer)
+        public IActionResult Update(string q, cDelivery_work delivery)
         {
             // long id = Convert.ToInt64(_security.Decrypt(q));
             // return View();

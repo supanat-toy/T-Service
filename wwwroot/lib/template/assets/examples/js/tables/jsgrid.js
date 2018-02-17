@@ -619,5 +619,39 @@
         modeSwitchButton: false
       }]
     });
+
+      // custom
+    (0, _jquery2.default)("#SetupProductGridField").jsGrid({
+        height: "200px",
+        width: "100%",
+
+        inserting: true,
+        editing: true,
+        sorting: true,
+        paging: false,
+        autoload: true,
+
+        data: [],
+
+        fields: [{
+          name: "รหัสสินค้า",
+          width: 100,
+          type: "text"
+        }, {
+          name: "ชื่อสินค้า",
+          width: 200,
+          type: "text"
+        }, {
+          name: "จำนวน",
+          type: "number",
+          width: 50,
+          align: "center"
+        }, {
+          type: "control",
+          editButton: false,
+          modeSwitchButton: false,
+        }]
+    });
+
   })();
 });

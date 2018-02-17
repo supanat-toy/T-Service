@@ -9,15 +9,15 @@ using Newtonsoft.Json;
 
 namespace T_Service.Models
 {
-    public class cMember
+    public class cEmployee
     {
-        public cMember()
+        public cEmployee()
         {
             
         }
         [Required (ErrorMessage = "NEED")]
         [Key]
-        public long member_id { get; set; }
+        public long employee_id { get; set; }
         public string full_name { get; set; }
         public string password { get; set; }
         public string gender { get; set; }
@@ -27,6 +27,5 @@ namespace T_Service.Models
         public string identity_card_number { get; set; }
         public DateTime created_datetime { get; set; }
         public DateTime updated_datetime { get; set; }
-        
     }
 }

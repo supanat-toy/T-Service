@@ -1,0 +1,123 @@
+<!-- Page Content -->
+      <div class="page-content container-fluid">
+        @Html.Partial("~/Views/PartialView/vMember.cshtml")
+        <div class="row"> <!-- ข้อมูลติดตั้งสินค้า -->
+          <div class="col-xxl-12 col-lg-12">
+            <!-- Example Panel With Heading -->
+            <div class="panel panel-bordered">
+                <div class="panel-heading">
+                    <h3 class="panel-title">ข้อมูลติดตั้งสินค้า</h3>
+                    <div class="panel-actions">
+                        <div class="input-group">
+                          <div class="form-inline">
+                            <div class="form-group col-md-12">
+                              <label class="form-control-label" for="inputInlineUsername">ประเภทสินค้า</label>
+                              <select class="form-control" data-plugin="select2" title='Choose one of the following...'>
+                                <optgroup label="Picnic">
+                                  <option>Mustard</option>
+                                  <option>Ketchup</option>
+                                  <option>Relish</option>
+                                </optgroup>
+                                <optgroup label="Camping">
+                                  <option>Tent</option>
+                                  <option>Flashlight</option>
+                                  <option>Toilet Paper</option>
+                                </optgroup>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                 </div>
+              <div class="panel-body">
+                @Html.Partial("~/Views/PartialView/vProductShortForm.cshtml")
+                <br>
+                <hr>
+                <br>
+                <div> <!-- ค่าตั้งติด  -->
+                      <h3 class="example-title">ค่าติดตั้ง</h3>
+                      <div class="table-responsive">
+                      <table class="table table-hover table-bordered" data-role="content" data-plugin="selectable" data-row-selectable="true">
+                      <thead class="bg-blue-grey-100">
+                        <tr>
+                          <th>เลือก</th>
+                          <th>ชื่อ</th>
+                          <th>รายละเอียด</th>
+                          <th>จำนวน</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @{
+                          for(int i = 0; i < 5; i++) {
+                            <tr>
+                              <td style="width:50px;">
+                                <span class="checkbox-custom checkbox-primary">
+                                  <input class="selectable-item" type="checkbox">
+                                  <label></label>
+                                </span>
+                              </td>
+                              <td>ชื่อ..</td>
+                              <td>รายละเอียด...</td>
+                              <td style="width:100px;"><input type="number" class="form-control input-sm"></td>
+                            </tr>
+                          }
+                        }
+                      </tbody>
+                      <tfoot style="background-color:#f3f7f9">
+                        <tr>
+                          <td colspan="4" align="right" style="font-weight:bold;">ผลรวมสุทธิ: <span>23,990</span> บาท</td>
+                        </tr>
+                      </tfoot>
+                      </table>
+                </div>
+                <br>
+                <div> <!-- ค่าติดตั้งเพิ่มเติม  -->
+                    <h3 class="example-title">ค่าอุปกรณ์ติดตั้งเพิ่มเติม</h3>
+                    <div class="table-responsive">
+                    <table class="table table-hover table-bordered" data-role="content" data-plugin="selectable" data-row-selectable="true">
+                    <thead class="bg-blue-grey-100">
+                        <tr>
+                          <th>เลือก</th>
+                          <th>ชื่อ</th>
+                          <th>รายละเอียด</th>
+                          <th>จำนวน</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @{
+                          for(int i = 0; i < 5; i++) {
+                            <tr>
+                              <td style="width:50px;">
+                                <span class="checkbox-custom checkbox-primary">
+                                  <input class="selectable-item" type="checkbox">
+                                  <label></label>
+                                </span>
+                              </td>
+                              <td>ชื่อ..</td>
+                              <td>รายละเอียด...</td>
+                              <td style="width:100px;"><input type="number" class="form-control input-sm"></td>
+                            </tr>
+                          }
+                        }
+                      </tbody>
+                      <tfoot style="background-color:#f3f7f9">
+                        <tr>
+                          <td colspan="4" align="right" style="font-weight:bold;">ผลรวมสุทธิ: <span>23,990</span> บาท</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+              
+
+              </div>
+              <div class="alert alert-facebook" role="alert" style="text-align: right;">
+                ผลรวมทั้งหมดสุทธิ: <span>23,990</span> บาท
+              </div>
+            </div>
+            </div>
+            <!-- End Example Panel With Heading -->
+          </div>
+        </div>
+        @Html.Partial("~/Views/PartialView/vEvaluation.cshtml")
+        <!-- End Example Contextual -->
+      </div>
+      <!-- End Page Content -->
