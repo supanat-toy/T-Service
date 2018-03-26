@@ -13,6 +13,11 @@ namespace T_Service.Controllers
     {
         public IActionResult Index()
         {
+            var setupProductList = new List<cList_setup_product_main>();
+            setupProductList = _service._pSetup_work.getSetupProductMainList();
+
+            var setupProductAccessoryList = new List<cList_setup_product_accessory>();
+            setupProductAccessoryList = _service._pSetup_work.getSetupProductAccessoryList();
             // List<> customerList = new List<mCustomer>();
             // customerList = _service._qCustomer.getList();
 

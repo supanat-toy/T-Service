@@ -27,6 +27,6 @@ namespace T_Service.Models
         public string identity_card_number { get; set; }
         public DateTime created_datetime { get; set; }
         public DateTime updated_datetime { get; set; }
-        
+        public bool is_admin { get; set; }
     }
 }

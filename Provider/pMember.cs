@@ -18,7 +18,6 @@ namespace T_Service.Providers
         public List<mMember> getList(){
             List<cMember> cMemberList = _db.Members.ToList();
             var memberList = cMemberList.Select(x => new mMember(){
-                isAdmin = false,
                 member = x
             }).ToList();
             // List<mMember> memberList = dataList.
@@ -31,7 +30,6 @@ namespace T_Service.Providers
             var cMember = _db.Members.Where(x=>x.email == email).FirstOrDefault();
             var cBook_addressList = _db.MemberBookAddresses.Where(x=>x.member_email == email).ToList();
             mMember member = new mMember(){
-                isAdmin = false,
                 member = cMember,
                 book_addressList = cBook_addressList
             };
@@ -39,7 +37,29 @@ namespace T_Service.Providers
             return member;
         }
 
+        public mResult insertDB(mMember dMember) 
+        {
+            var result = new mResult()
+            {
+                isSucceed = true,
+                message = _wording.insertedDB_succeed
+            };
 
+            if (TryValidateModel(dMember))
+            {
+                try {
+                    _db.Members.Add(dMember.member);
+                    _db.SaveChanges();
+                } catch (Exception e) {
+                    result = new mResult() 
+                    {
+                        isSucceed = false,
+                        message = e.Message
+                    };
+                }
+            }
+            return result;
+        }
 
 
         // public List<mCustomer> getList(){

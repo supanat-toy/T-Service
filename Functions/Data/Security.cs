@@ -14,9 +14,9 @@ namespace T_Service.Functions
 {
     public class Security : FunctionsHelper
     {
-        public string Encrypt(string clearText)
+        public string encrypt(string clearText)
         {
-            string encryptionKey = "ch3";
+            string encryptionKey = "t-service";
             byte[] clearBytes = Encoding.Unicode.GetBytes(clearText);
             using (Aes encryptor = Aes.Create())
             {
@@ -35,9 +35,9 @@ namespace T_Service.Functions
             }
             return clearText;
         }
-        public string Decrypt(string cipherText)
+        public string decrypt(string cipherText)
         {
-            string encryptionKey = "ch3";
+            string encryptionKey = "t-service";
             cipherText = cipherText.Replace(" ", "+");
             byte[] cipherBytes = Convert.FromBase64String(cipherText);
             using (Aes encryptor = Aes.Create())

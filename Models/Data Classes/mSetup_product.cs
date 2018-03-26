@@ -8,14 +8,13 @@ using Newtonsoft.Json;
 
 namespace T_Service.Models
 {
-    public class mMember
+    public class mSetup_product
     {
-        public mMember()
+        public mSetup_product()
         {
             
         }
-        [Required (ErrorMessage = "NEED")]
-        public cMember member { get; set; }
-        public List<cMember_book_address> book_addressList { get; set; }
+        public cSetup_product setup_product { get; set; }
+        public List<cSetup_product_accessory> setup_product_accessoryList { get; set; }
     }
 }

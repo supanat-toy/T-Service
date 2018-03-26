@@ -19,7 +19,7 @@ namespace T_Service.Models
         [Key]
         public long Tservice_work_id { get; set; }
         public long setup_work_id { get; set; }
-        public long setup_work_product_type_id { get; set; }
+        public long Tservice_type_id { get; set; }
         public DateTime setup_appointed_datetime { get; set; }
         public DateTime setup_finished_datetime { get; set; }
         public double setup_price { get; set; }
@@ -30,6 +30,6 @@ namespace T_Service.Models
         public string remark_employee { get; set; }
         public string remark_member { get; set; }
         public string signature_customer_image_url { get; set; }
-        public string Tservice_type_id { get; set; }
+        public bool isCancelled { get; set; }
     }
 }

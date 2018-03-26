@@ -19,6 +19,7 @@ namespace T_Service.Models
         [Key]
         public long setup_product_accessory_id { get; set; }
         public long setup_product_id { get; set; }
+        public long setup_work_id { get; set; }
         public long list_setup_product_accessory_id { get; set; }
         public double product_accessory_price { get; set; }
         public double product_accessory_quantity { get; set; }

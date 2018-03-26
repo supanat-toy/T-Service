@@ -21,6 +21,7 @@ namespace T_Service.Functions
         protected readonly Storage _storage;
         protected readonly User _user;
         protected readonly Service _service;
+        protected readonly Wording _wording;
         protected readonly T_ServiceContext _db;
         public FunctionsHelper()
         {

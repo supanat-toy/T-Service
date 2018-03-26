@@ -37,8 +37,9 @@ namespace T_Service.Controllers
             return View();
         }
 
-        public IActionResult Update(string q)
+        public IActionResult Update(string q = "")
         {
+            // long id = Convert.ToInt64(_security.decrypt(q));
             // long id = Convert.ToInt64(_security.Decrypt(q));
             // customer = customer == null ? _service._qCustomer.getDetails(id) : customer;
 
@@ -49,8 +50,11 @@ namespace T_Service.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Update(string q, cDelivery_work delivery)
+        public IActionResult Update(string q, mDelivery_work delivery)
         {
+            long id = Convert.ToInt64(_security.decrypt(q));
+            mResult result = _service._pDelivery_work.update(id, delivery);
+
             // long id = Convert.ToInt64(_security.Decrypt(q));
             // return View();
 
@@ -65,12 +69,9 @@ namespace T_Service.Controllers
         }
         public IActionResult Delete(string q)
         {
-            // long id = Convert.ToInt64(_security.Decrypt(q));
-            // if (true){
-            //     customer.isRequestedDeleted = true;
-            //     _service._qCustomer.updateDB(id, customer);
-            // }
-            // return RedirectToAction("Index");
+            long id = Convert.ToInt64(_security.decrypt(q));
+            mResult result = _service._pDelivery_work.delete(id);
+
             return View();
         } 
     }

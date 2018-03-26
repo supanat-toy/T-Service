@@ -8,13 +8,8 @@ using Newtonsoft.Json;
 
 namespace T_Service.Models
 {
-    public class mSetup_work: mTservice_work
+    public class mSetup_accessory_product
     {
-        public mSetup_work()
-        {
-            
-        }
-        public cSetup_work setup_work { get; set; }
-        public List<mSetup_product> setup_productList { get; set; }
+        public cSetup_product_accessory setup_product_accessory { get; set; }
     }
 }
