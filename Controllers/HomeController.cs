@@ -12,6 +12,7 @@ namespace T_Service.Controllers
     {
         public IActionResult Index()
         {
+            
             return View();
         }
 

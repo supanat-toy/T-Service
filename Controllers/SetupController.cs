@@ -11,16 +11,21 @@ namespace T_Service.Controllers
 {
     public class SetupController : FunctionsHelper
     {
+
         public IActionResult Index()
         {
-            var setupProductList = new List<cList_setup_product_main>();
-            setupProductList = _service._pSetup_work.getSetupProductMainList();
+            var a = _service._pSetup_work;
+            // var itemList = _service._pSetup_work.serviceList();
 
-            var setupProductAccessoryList = new List<cList_setup_product_accessory>();
-            setupProductAccessoryList = _service._pSetup_work.getSetupProductAccessoryList();
+            // var setupProductList = new List<cList_setup_product_main>();
+            // setupProductList = _service._pSetup_work.getSetupProductMainList();
+
+            // var setupProductAccessoryList = new List<cList_setup_product_accessory>();
+            // setupProductAccessoryList = _service._pSetup_work.getSetupProductAccessoryList();
             // List<> customerList = new List<mCustomer>();
             // customerList = _service._qCustomer.getList();
 
+            // ViewData["itemList"] = itemList as List<cList_Tservice_type>;
             return View();
         }
         public IActionResult Create()

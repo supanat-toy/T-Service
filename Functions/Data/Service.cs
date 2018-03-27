@@ -13,6 +13,6 @@ namespace T_Service.Functions
     {
         public readonly pMember _pMember;
         public readonly pSetup_work _pSetup_work;
-        public readonly pDelivery_work _pDelivery_work;
+        public readonly pDelivery_work _pDelivery_work ;
     }
 }

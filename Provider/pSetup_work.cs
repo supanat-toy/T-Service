@@ -15,6 +15,17 @@ namespace T_Service.Providers
     {
         public pSetup_work(T_ServiceContext db) : base(db) { }
 
+        public pSetup_work()
+        {
+            
+        }
+
+        public List<cList_Tservice_type> serviceList() {
+
+            var list = _db.ListTserviceTypes.ToList();
+            return list;
+        }
+
         #region CGUD
         public List<mSetup_work> getList(){
             
