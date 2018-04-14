@@ -14,7 +14,7 @@ namespace T_Service.Controllers
 
         public IActionResult Index()
         {
-            var a = _service._pSetup_work;
+            // var a = _service._pSetup_work;
             // var itemList = _service._pSetup_work.serviceList();
 
             // var setupProductList = new List<cList_setup_product_main>();

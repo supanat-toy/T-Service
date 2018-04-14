@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using T_Service.Models;
 
-namespace T_Service.Functions
+namespace T_Service.Functions 
 {
-    public class Wording
+    public class Wording : FunctionsHelper
     {
         public string insertedDB_succeed = "Insert Successfully";
         public string updatedDB_succeed = "Update Successfully";
