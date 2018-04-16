@@ -53,7 +53,7 @@ namespace T_Service.Controllers
         public IActionResult Update(string q, mDelivery_work delivery)
         {
             long id = Convert.ToInt64(_security.decrypt(q));
-            mResult result = _service._pDelivery_work.update(id, delivery);
+            // mResult result = _service._pDelivery_work.update(id, delivery);
 
             // long id = Convert.ToInt64(_security.Decrypt(q));
             // return View();
@@ -70,7 +70,7 @@ namespace T_Service.Controllers
         public IActionResult Delete(string q)
         {
             long id = Convert.ToInt64(_security.decrypt(q));
-            mResult result = _service._pDelivery_work.delete(id);
+            // mResult result = _service._pDelivery_work.delete(id);
 
             return View();
         } 

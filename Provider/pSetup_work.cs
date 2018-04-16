@@ -11,19 +11,18 @@ using T_Service.Functions;
 
 namespace T_Service.Providers
 {
-    public class pSetup_work : FunctionsHelper
+    public class pSetup_work : IpSetup_work
     {
-        public pSetup_work(T_ServiceContext db) : base(db) { }
-
-        public pSetup_work()
+        protected readonly T_ServiceContext _db;
+        public pSetup_work(T_ServiceContext db) 
         {
-            
+            _db = db;
         }
 
-        public List<cList_Tservice_type> serviceList() {
-
+        public List<cList_Tservice_type> getServiceList() {
             var list = _db.ListTserviceTypes.ToList();
             return list;
+            // return new List<cList_Tservice_type>();
         }
 
         #region CGUD
@@ -51,13 +50,13 @@ namespace T_Service.Providers
                 setup_productList[i].setup_product_accessoryList = cSetup_product_accessoryList.Where(x=>x.setup_work_id == cSetup_work.setup_work_id).ToList();
             }
 
-            var member = _service._pMember.getDetails(email);
+            // var member = _service._pMember.getDetails(email);
 
             var setup_work = new mSetup_work() 
             {
                 setup_work = cSetup_work,
                 setup_productList = setup_productList,
-                member = member.member
+                // member = member.member
             };
 
             return setup_work;
@@ -66,7 +65,7 @@ namespace T_Service.Providers
             var result = new mResult() 
             {
                 isSucceed = true,
-                message = _wording.insertedDB_succeed
+                // message = _wording.insertedDB_succeed
             };
 
             setup.setup_work.created_datetime = DateTime.Now;
@@ -116,7 +115,7 @@ namespace T_Service.Providers
             var result = new mResult() 
             {
                 isSucceed = true,
-                message = _wording.updatedDB_succeed
+                // message = _wording.updatedDB_succeed
             };
 
             var cSetup_work = _db.SetupWorks.Where(x=>x.setup_work_id == setup.setup_work.setup_work_id).FirstOrDefault();
@@ -207,7 +206,7 @@ namespace T_Service.Providers
             var result = new mResult() 
             {
                 isSucceed = true,
-                message = _wording.deletedDB_succeed
+                // message = _wording.deletedDB_succeed
             };
             var deliveryWork = _db.DeliveryWorks.Where(x=>x.delivery_work_id == id).FirstOrDefault();
             if (deliveryWork != null) {

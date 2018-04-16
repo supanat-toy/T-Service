@@ -13,8 +13,6 @@ namespace T_Service.Providers
 {
     public class pMember : FunctionsHelper
     {
-        public pMember(T_ServiceContext db) : base(db) { }
-
         public List<mMember> getList(){
             List<cMember> cMemberList = _db.Members.ToList();
             var memberList = cMemberList.Select(x => new mMember(){

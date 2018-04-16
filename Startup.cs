@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using T_Service.Data;
 using T_Service.Models;
+using T_Service.Providers;
 
 namespace T_Service
 {
@@ -33,6 +34,8 @@ namespace T_Service
                 options.IdleTimeout = TimeSpan.FromMinutes(30);
                 options.Cookie.HttpOnly = true;    
             });
+
+            services.AddTransient<IpSetup_work, pSetup_work>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

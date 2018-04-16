@@ -5,27 +5,31 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using T_Service.Models;
+using T_Service.Data;
 using T_Service.Functions;
+using T_Service.Providers;
 
 namespace T_Service.Controllers
 {
     public class SetupController : FunctionsHelper
     {
+        public IpSetup_work _pSetup_work;
+        public SetupController(
+            T_ServiceContext db,
+            IpSetup_work pSetup_work) : base(db) {
+            _pSetup_work = pSetup_work;
+        }
 
+        public async Task<IActionResult> api()
+        {
+            var a = _api.getA(2);
+            var b = _format.GetFormatDate_dMMMMyyyy(DateTime.Now);
+            var d = _pSetup_work.getServiceList();
+            Console.Out.WriteLine("a: " + a);
+            return Ok(d);
+        }
         public IActionResult Index()
         {
-            // var a = _service._pSetup_work;
-            // var itemList = _service._pSetup_work.serviceList();
-
-            // var setupProductList = new List<cList_setup_product_main>();
-            // setupProductList = _service._pSetup_work.getSetupProductMainList();
-
-            // var setupProductAccessoryList = new List<cList_setup_product_accessory>();
-            // setupProductAccessoryList = _service._pSetup_work.getSetupProductAccessoryList();
-            // List<> customerList = new List<mCustomer>();
-            // customerList = _service._qCustomer.getList();
-
-            // ViewData["itemList"] = itemList as List<cList_Tservice_type>;
             return View();
         }
         public IActionResult Create()

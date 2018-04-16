@@ -13,8 +13,6 @@ namespace T_Service.Providers
 {
     public class pDelivery_work : FunctionsHelper
     {
-        public pDelivery_work(T_ServiceContext db) : base(db) { }
-
         public List<mDelivery_work> getList()
         {
             var cDelivery_workList = _db.DeliveryWorks.OrderByDescending(x=>x.created_datetime).ToList();
@@ -29,12 +27,12 @@ namespace T_Service.Providers
         {
             var cDelivery_work = _db.DeliveryWorks.Where(x=>x.member_email == email).FirstOrDefault();
             var delivery_productList = _db.DeliveryProducts.Where(x=>x.delivery_work_id == cDelivery_work.delivery_work_id).ToList();
-            var member = _service._pMember.getDetails(email);
+            // var member = _service._pMember.getDetails(email);
             var delivery_work = new mDelivery_work()
             {
                 delivery_work = cDelivery_work,
                 delivery_productList = delivery_productList,
-                member = member.member
+                // member = member.member
             };
 
             return delivery_work;

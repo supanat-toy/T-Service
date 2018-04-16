@@ -13,7 +13,8 @@ namespace T_Service.Providers
 {
     public class pMemberBookAddress : FunctionsHelper
     {
-        public pMemberBookAddress(T_ServiceContext db) : base(db) { }
+        // protected readonly T_ServiceContext _db;
+        // public pMemberBookAddress(T_ServiceContext db) : base(db) { }
 
         public mResult insertDB(cMember_book_address memberBookAddress) 
         {

@@ -10,19 +10,18 @@ using T_Service.Providers;
 
 namespace T_Service.Functions
 {
-    public class FunctionsHelper: Controller 
+    public class FunctionsHelper : Controller 
     {
-        protected readonly API _api;
-        protected readonly Cache _cache;
-        protected readonly Cookie _cookie;
-        protected readonly Email _email;
-        protected readonly Format _format;
-        protected readonly Image _image;
-        protected readonly Security _security;
-        protected readonly Storage _storage;
-        protected readonly User _user;
-        protected readonly Service _service;
-        protected readonly Wording _wording;
+        protected static readonly API _api = new API();
+        protected static readonly Cache _cache = new Cache();
+        protected static readonly Cookie _cookie = new Cookie();
+        protected static readonly Email _email = new Email();
+        protected static readonly Format _format = new Format();
+        protected static readonly Image _image = new Image();
+        protected static readonly Security _security = new Security();
+        protected static readonly Storage _storage = new Storage();
+        protected static readonly User _user = new User();
+        protected static readonly Wording _wording = new Wording();
         protected readonly T_ServiceContext _db;
         public FunctionsHelper()
         {

@@ -10,6 +10,9 @@ namespace T_Service.Functions
 {
     public class API : FunctionsHelper
     {
-        public string authorization = "";
+        public string authorization = "123";
+        public int getA(int a) {
+            return a;
+        }
     }
 }
